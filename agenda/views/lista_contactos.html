@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de Contactos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 align="center" class="my-4">Contactos</h1>
+    <hr>
+    <div class="container">
+      
+      <div class="row mb-3 justify-content-end">
+        <div class="col-12 col-md-4">
+          <form action="/lista_contactos" method="GET" class="input-group">
+            <input type="text" name="buscar" class="form-control" placeholder="Buscar usuario..." aria-label="Buscar usuario">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+      
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr class="table-info">
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Primer Apellido</th>
+            <th scope="col">Segundo Apellido</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Email</th>
+            <th scope="col" class="text-center">Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-danger">
+            <th scope="row">1</th>
+            <td>Alex</td>
+            <td>Gayosso</td>
+            <td>Maldonado</td>
+            <td>7751234567</td>
+            <td>alex@gmail.com</td>
+            <td class="text-center">
+              <a href="/ver_contacto" class="btn btn-sm btn-info text-white">Ver</a>
+              <a href="/editar_contacto" class="btn btn-sm btn-warning text-white">Editar</a>
+              <a href="/borrar_contacto" class="btn btn-sm btn-danger">Borrar</a>
+            </td>
+          </tr>
+          <tr class="table-warning">
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <td>7759876543</td>
+            <td>jacob@gmail.com</td>
+            <td class="text-center">
+              <a href="/ver_contacto" class="btn btn-sm btn-info text-white">Ver</a>
+              <a href="/editar_contacto" class="btn btn-sm btn-warning text-white">Editar</a>
+              <a href="/borrar_contacto" class="btn btn-sm btn-danger">Borrar</a>
+            </td>
+          </tr>
+          <tr class="table-secondary">
+            <th scope="row">3</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>@social</td>
+            <td>7751112233</td>
+            <td>john@gmail.com</td>
+            <td class="text-center">
+              <a href="/ver_contacto" class="btn btn-sm btn-info text-white">Ver</a>
+              <a href="/editar_contacto" class="btn btn-sm btn-warning text-white">Editar</a>
+              <a href="/borrar_contacto" class="btn btn-sm btn-danger">Borrar</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <br>
+      <a href="/" class="btn btn-secondary">Regresar</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
