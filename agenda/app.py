@@ -12,9 +12,6 @@ urls = (
 app = web.application(urls, globals())
 render = web.template.render('views')
 
-class index:
-    def GET(self):
-        return render.index()
     
 class Lista_contactos:
     def GET(self):    
