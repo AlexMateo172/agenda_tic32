@@ -50,8 +50,4 @@ class Editar_contacto:
         # Muestra el formulario con los datos actuales
         return render.editar_contacto(contacto)
 
-    def POST(self, id_contacto):
-        # web.input() captura los datos enviados por el formulario HTML
-        formulario = web.input()
-        self.actualizarContacto(id_contacto, formulario)
-        raise web.seeother('/lista_contactos')
+    

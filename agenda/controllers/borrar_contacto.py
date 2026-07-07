@@ -46,8 +46,3 @@ class Borrar_contacto:
         contacto = self.obtenerContacto(id_contacto)
         # Renderiza la vista pidiendo confirmación (ej. "¿Seguro que deseas borrar a John?")
         return render.borrar_contacto(contacto)
-
-    def POST(self, id_contacto):
-        # Cuando se envía el formulario de confirmación, se borra y redirige a la lista
-        self.eliminarContacto(id_contacto)
-        raise web.seeother('/lista_contactos')
